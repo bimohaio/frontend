@@ -1,0 +1,125 @@
+/*format all element*/
+* {
+	margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+	font-family: Roboto,Arial,Helvetica,sans-serif;
+}
+
+body {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.clear {
+    clear: both;
+}
+
+/*format for container*/
+
+.category__container {
+    width: 80%;
+    background-color: #fff;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 6px;
+}
+
+.category__container .item {
+    width: 16.667%;
+    padding: 15px;
+    float:left;
+    border-right: 1px solid rgba(0, 0, 0, .05);
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+
+.category__container .item:hover {
+    -webkit-box-shadow: -1px 3px 39px -8px rgba(112, 112, 112, 0.46);
+    -moz-box-shadow: -1px 3px 39px -8px rgba(112, 112, 112, 0.46);
+    box-shadow: -1px 3px 39px -8px rgba(112, 112, 112, 0.46);
+}
+
+.category__container .image {
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: #f4f4f4;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.category__container .image img {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.category__container .item_name {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.background {
+    margin-top: 10px;
+    height: 600px;
+    background-image: url(https://www.w3schools.com/cssref/img_tree.gif);
+    background-clip: 
+}
+
+#example1 {
+  border: 10px dotted black;
+  padding: 15px;
+  background: lightblue;
+  background-clip: border-box;  
+}
+
+#example2 {
+  border: 10px dotted black;
+  padding: 15px;
+  background: lightblue;
+  background-clip: padding-box;
+}
+
+#example3 {
+  border: 10px dotted black;
+  padding: 15px;
+  background: lightblue;
+  background-clip: content-box;
+}
+
+.gradient {
+    /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);*/
+    background: linear-gradient(90deg, red 0%, green 25%, yellow 100%);
+    height: 300px;
+    width: 400px;
+   /* -ms-transform: skewY(20deg); 
+    transform: skewY(20deg);*/
+    animation-name: ;
+    animation: example 4s infinite;
+}
+
+.icon i {
+    color: red;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+@keyframes example {
+    0% {
+        background: linear-gradient(90deg, red 20%, green 25%, yellow 55%);
+    }
+    25% {
+        background: linear-gradient(90deg, red 55%, green 25%, yellow 20%);
+    }
+    55% {
+        background: linear-gradient(90deg, red 50%, green 25%, yellow 25%);
+    }
+    100% {
+        background: linear-gradient(90deg, red 40%, green 20%, yellow 40%);
+    }
+  
+}
