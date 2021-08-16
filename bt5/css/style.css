@@ -1,0 +1,173 @@
+* {
+	/*box-sizing: border-box;*/
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.cover {
+	height: 400px;
+	width: 400px;
+	margin: auto;
+	background-color: #cd1817;
+}
+
+.above {
+	font-size: 100px;
+	text-align: center;
+	color: white;
+}
+
+.cover, .cover i {
+	font-size: 100px;
+	text-align: center;
+	color: white;
+}
+
+.above i {
+	margin-top: 10px;
+}
+
+.below p {
+	margin: 10px;
+	font-size: 50px;
+	text-align: center;
+	color: white;
+}
+
+.cover2 {
+	margin-top: 10px;
+	height: 200px;
+	width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #cd1817;
+}
+
+.cover2:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.item {
+	display: inline-block;
+	vertical-align: middle;
+	width: 30%;
+	height: 40%;
+	border: 2px solid red;
+	background-color: white;
+	float: left;
+	text-align: center;
+	padding-top: 15px;
+	transform: skew(-.312rad);
+}
+
+.item i {
+	font-size: 30px;
+	color: red;
+	transform: skew(.312rad);
+}
+
+.item:first-child {
+	border-radius: 10px 0px 0px 10px;
+}
+
+.item:last-child {
+	border-radius: 0px 10px 10px 0px;
+}
+
+/*b5*/
+
+.parent {
+	width: 500px;
+	height: 500px;
+	margin: auto;
+	background-color: pink;
+	position: fixed;
+	left: -20%;
+	/*border-radius: 50%;*/
+}
+
+.son {
+	width: 200px;
+	height: 200px;
+	background-color: purple;
+	position: absolute;
+	/*border-radius: 50%;*/
+	top: 0%;
+	right: -10%;
+}
+
+.menu {
+	width: 80%;
+	margin: auto;
+}
+
+.menu_da_cap {
+	position: relative;
+	padding: 15px;
+	display: inline-block;
+	background-color: pink;
+}
+
+
+.menu_da_cap .sub_menu {
+	display:none;
+	position: absolute;
+	background-color: green;
+	top: 100%;
+	left: 0%;
+}
+
+.menu_da_cap:hover {
+	background-color: yellow !important;
+}
+
+.menu_da_cap:hover .sub_menu {
+	display: block;
+}
+
+
+.sub_menu li {
+	white-space: nowrap;
+	position: relative;
+	padding: 7px;
+}
+
+.sub_menu li:hover  {
+	background-color: pink;
+}
+
+.super_sub_menu {
+	display: none !important;
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
+.super_sub_menu li {
+	background-color: green !important;
+	white-space: nowrap;
+}
+
+.sub_menu li:hover .super_sub_menu {
+	display: block !important;
+}
+
+.super_sub_menu li:hover {
+	background-color: pink !important;
+}
+
+
+
+
+
