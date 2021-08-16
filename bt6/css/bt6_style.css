@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.clear {
+    clear: both;
+}
+
+.top__banner {
+    position: sticky;
+    width: 100%;
+    height: 92px;
+    background-color: #b81212;
+}
+
+.banner__content {
+    width: 85%;
+    /* height: 300px; */
+    margin: auto;
+}
+
+.upper {
+    width: 100%;
+    background-color: #cc0505;
+    height: 44px;
+    position: relative;
+    border-bottom: 1px solid rgb(216, 99, 99);
+}
+
+.vtv__logo img {
+    /* width: 130px; */
+    height: 85px;
+    margin-top: 8px;
+    position: absolute;
+    float: left;
+}
+
+.title__banner {
+    display: block;
+    float: left;
+}
+
+.upper__right {
+    width: 40%;
+    height: 100%;
+    float: right;
+}
+
+.upper__right .search {
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    padding: 13px 15px;
+    float: right;
+    display: inline-block;
+    border-right: 1px solid #9c0707;
+    border-left: 1px solid #9c0707;
+}
+
+.upper__right .search i {
+    color: rgb(250, 223, 223);
+    font-size: 18px;
+}
+
+.upper__right .facebook__icon {
+    width: 60px;
+    height: 100%;
+    text-align: center;
+    padding: 8px 15px;
+    float: right;
+    border-left: 1px solid #9c0707;
+}
+.facebook__icon .round__icon {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-color: rgb(199, 12, 12);
+    border: 1px solid #9c0707;
+    border-radius: 50%;
+}
+
+.facebook__icon i {
+    margin-top: 5px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+
+.language {
+    /* width: 91px;
+    height: 44px; */
+    display: block;
+    margin-right: 10px;
+    float: right;
+}
+
+.language__box {
+    padding: 5px 5px;
+    margin-top: 7px;
+    border: 1px solid #9c0707;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.language__box i {
+    color: white;
+    font-size: 12px;
+}
+
+.language__box a {
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.menu
+/* .upper__right .facebook__icon .round__icon {
+    background-color: #cc2020;
+    margin: 1px solid #9c0707;
+    border-radius: 50%;
+}
+
+.round__icon i {
+    font-size: 12px;
+    color: white;
+} */
+
+.menu__bar {
+    width: 100%;
+}
+
+.menu__content {
+    float: right;
+    width: 88%;
+    height: 100%;
+}
+
+.menu__icon {
+    width: 49px;
+    height: 43px;
+    float: right;
+    text-align: center;
+    /* padding: 5px 5px; */
+    position: relative;
+}
+
+.menu__bar__box {
+    padding: 5px 5px;
+    margin-top: 7px;
+    border: 1.5px solid #9c0707;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #b92727;
+    background-image: linear-gradient(#f01a1a, #d20d0d, #c10101 )
+}
+
+.menu__bar__box i {
+    color: white;
+    font-size: 20px;
+}
+
+.menu {
+    width: 89%;
+    display: inline-block;
+    margin:  13px 5px;
+    padding: 0px;
+    vertical-align: center;
+    float: right;
+}
+
+.menu ul {
+    text-align: right;
+}
+
+.menu ul li {
+    display: inline-block;
+    font-size: 11px;
+    color: white;
+    font-weight: 650;
+    margin: 0 7px;
+}
+
+.home {
+    display: block;
+    padding: 14px 0;
+    float: right;
+    text-align: center;
+}
+
+.home i {
+    color: white;
+    font-size: 18px;
+}
+/* .vtv__logo img {
+    width: 130px;
+    height: 100px;
+    margin-top: 8px;
+    float: left;
+} */
