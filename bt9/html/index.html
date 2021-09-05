@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>BT9</title>
+</head>
+<body>
+    <!-- <div class="grid__parent">
+        <div class="grid__item">1</div>
+        <div class="grid__item">2</div>
+        <div class="grid__item">3</div>
+        <div class="grid__item">4</div>
+        <div class="grid__item">5</div>
+        <div class="grid__item">6</div>
+        <div class="grid__item">7</div>
+        <div class="grid__item">8</div>
+        <div class="grid__item">9</div>
+        <div class="grid__item">10</div>
+    </div>
+    <div class="grid__big">
+        <div class="grid__item">1</div>
+        <div class="grid__item">2</div>
+        <div class="grid__item">3</div>
+        <div class="grid__item">4</div>
+        <div class="grid__item">5</div>
+        <div class="grid__item">6</div>
+        <div class="grid__item">7</div>
+        <div class="grid__item">8</div>
+        <div class="grid__item">9</div>
+        <div class="grid__item">10</div>
+    </div> -->
+
+    <div class="light__mode" id="light-bulb">
+
+    </div>
+    <div class="button">
+        <button id="control-button">Turn On</button>
+    </div>
+</body>
+<script>
+    var button = document.getElementById("control-button");
+
+    button.addEventListener("click", controlLightBulb);
+
+    function controlLightBulb() {
+        var btn_text = button.textContent;
+        var lighBulb = documentgetElementById("light-bulb");
+        console.log(LighBulb)
+        if (btn_text == "Turn On") {
+            lighBulb.style.setProperty('--status', '#ffddle')
+            button.innerHTML = "Turn Off";
+        } else if (btn_text == "Turn Off") {
+            lighBulb.style.setProperty('--status', '#726565')
+            button.innerHTML = "Turn On";
+        }
+    }
+</script>
+</html>
