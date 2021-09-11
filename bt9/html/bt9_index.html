@@ -1,0 +1,2059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bt9_style.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <title>Youtube</title>
+</head>
+<body>
+    <div class="top__banner">
+        <div class="logo">
+            <button class="menu__bar" id="showLeftPush">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="youtube__logo">
+                <img src="../img/youtube_logo_kiss_ver3.png" alt="">
+                <p>VN</p>
+            </div>
+        </div>
+        <div class="search">
+            <div class="search__form">
+                <div class="container">
+                    <div class="search__input">
+                        <input type="text" placeholder="Tìm kiếm">
+                        <div class="keyboard__icon">
+                            <i class="fas fa-keyboard"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="search__button">
+                    <div class="tooltiptext">Tìm kiếm</div>
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div class="voice__search">
+                <div class="tooltiptext">Tìm kiếm bằng giọng nói</div>
+                <div class="voice__search__container">
+                    <i class="fas fa-microphone"></i>
+                </div>
+            </div>
+        </div>
+        <div class="top__icon">
+            <div class="icon_container" id="uploadVideo">
+                <div class="tooltiptext">Tạo</div>
+                <i class="fas fa-video"></i>
+                <div class="upload_video" id="upVideoButton">
+                    <div class="upload_video_button">
+                        <i class="far fa-caret-square-right"></i>
+                        <a href="#">Tải video lên</a>
+                    </div>
+                    <div class="upload_video_button">
+                        <i class="fas fa-podcast"></i>
+                        <a href="#">Phát trực tiếp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="icon_container" id="categoryButton">
+                <div class="tooltiptext">Các ứng dụng Youtube</div>
+                <i class="fas fa-th"></i>
+                <div class="youtube_category" id="youtubeCategory">
+                    <div class="ctg_container">
+                        <i class="far fa-caret-square-right"></i>
+                        <a href="#">Youtube TV</a>
+                    </div>
+                    <div class="ctg_container">
+                        <div class="ctg_container_ins">
+                            <i class="fab fa-youtube"></i>
+                            <a href="#">Youtube Music</a>
+                        </div>
+                        <div class="ctg_container_ins">
+                            <i class="fab fa-youtube"></i>
+                            <a href="#">Youtube Kids</a>
+                        </div>
+                    </div>
+                    <div class="ctg_container">
+                        <div class="ctg_container_ins">
+                            <i class="fab fa-youtube"></i>
+                            <a href="#">Học viện sáng tạo</a>
+                        </div>
+                        <div class="ctg_container_ins">
+                            <i class="fab fa-youtube"></i>
+                            <a href="#">Youtube dành cho Nghệ sĩ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon_container" id="notiButton">
+                <div class="tooltiptext">Thông báo</div>
+                <i class="far fa-bell"></i>
+                <div class="notification" id="notification">
+                    <div class="noti__header">
+                        <p>Thông báo</p>
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <div class="noti__content">
+                        <i class="far fa-bell"></i>
+                        <div class="noti_cnt">
+                            <p>Thông báo của bạn hiển thị ở đây</p>
+                            <p>Đăng ký kênh yêu thích của bạn</p>
+                            <p>để nhận thông báo về các video mới nhất.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon_container">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <nav class="sidebar" id="cbp-spmenu-s1">
+            <div class="sidebar_content">
+                <div class="content_container">
+                    <div class="sidebar_icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="sidebar_content_name">
+                        <p>Trang chủ</p>
+                    </div>
+                </div>
+                <div class="content_container">
+                    <div class="sidebar_icon">
+                        <i class="far fa-compass"></i>
+                    </div>
+                    <div class="sidebar_content_name">
+                        <p>Khám phá</p>
+                    </div>
+                </div>
+                <div class="content_container">
+                    <div class="sidebar_icon">
+                        <i class="far fa-clone"></i>
+                    </div>
+                    <div class="sidebar_content_name">
+                        <p>Kênh đăng ký</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar_content example">
+                <div class="content_container">
+                    <div class="sidebar_icon">
+                        <i class="far fa-clone"></i>
+                    </div>
+                    <div class="sidebar_content_name">
+                        <p>Thư viện</p>
+                    </div>
+                </div>
+                <div class="content_container">
+                    <div class="sidebar_icon">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <div class="sidebar_content_name">
+                        <p>Video đã xem</p>
+                    </div>
+                </div>
+                <div class="content_container">
+                    <div class="sidebar_icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="sidebar_content_name">
+                        <p>Video của bạn</p>
+                    </div>
+                </div>
+                <div class="content_container">
+                    <div class="sidebar_icon">
+                        <i class="far fa-thumbs-up"></i>
+                    </div>
+                    <div class="sidebar_content_name">
+                        <p>Video đã thích</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar_content">
+                <a href="#"><h5>KÊNH ĐĂNG KÝ</h5></a>
+                <div class="content_container">
+                    <div class="sidebar_icon">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="sidebar_content_name">
+                        <p>Subcribe channel 1</p>
+                    </div>
+                </div>
+                <div class="content_container">
+                    <div class="sidebar_icon">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="sidebar_content_name">
+                        <p>Subcribe channel 2</p>
+                    </div>
+                </div>
+                <div class="content_container">
+                    <div class="sidebar_icon">
+                        <i class="fas fa-plus-circle"></i>
+                    </div>
+                    <div class="sidebar_content_name">
+                        <p>Xem qua các kênh</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar_content">
+                <a href="#"><h5>DỊCH VỤ KHÁC CỦA YOUTUBE</h5></a>
+                <div class="content_container">
+                    <div class="sidebar_icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="sidebar_content_name">
+                        <p>Trò chơi</p>
+                    </div>
+                </div>
+                <div class="content_container">
+                    <div class="sidebar_icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <div class="sidebar_content_name">
+                        <p>Sự kiện trực tiếp</p>
+                    </div>
+                </div>
+                <div class="content_container">
+                    <div class="sidebar_icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="sidebar_content_name">
+                        <p>Thể thao</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar_content">
+                <div class="content_container">
+                    <div class="sidebar_icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <div class="sidebar_content_name">
+                        <p>Cài đặt</p>
+                    </div>
+                </div>
+                <div class="content_container">
+                    <div class="sidebar_icon">
+                        <i class="fab fa-font-awesome-flag"></i>
+                    </div>
+                    <div class="sidebar_content_name">
+                        <p>Lịch sử báo cáo</p>
+                    </div>
+                </div>
+                <div class="content_container">
+                    <div class="sidebar_icon">
+                        <i class="far fa-question-circle"></i>
+                    </div>
+                    <div class="sidebar_content_name">
+                        <p>Trợ giúp</p>
+                    </div>
+                </div>
+                <div class="content_container">
+                    <div class="sidebar_icon">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <div class="sidebar_content_name">
+                        <p>Gửi phản hồi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar_content">
+                <div class="sb__content">
+                    <div class="guide">
+                        <a href="">Giới thiệu</a>
+                        <a href="">Báo chí</a>
+                        <a href="">Bản quyền</a>
+                        <a href="">Liên hệ với chúng tôi</a>
+                        <a href="">Người sáng tạo</a>
+                        <a href="">Quảng cáo</a>
+                        <a href="">Nhà phát triển</a>
+                    </div>
+                    <div class="guide">
+                        <a href="">Điều khoản</a>
+                        <a href="">Quyền riêng tư</a>
+                        <a href="">Chính sách và an toàn</a>
+                        <a href="">Cách Youtube hoạt động</a>
+                        <a href="">Thử các tính năng mới</a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <a href="#">© 2021 Google LLC</a>
+                </div>
+            </div>
+        </nav>
+        <div class="main__content">
+            <div class="tag" id="container">
+                <div class="prev__button">
+                    <button id="slideBack" type="button">&lsaquo;</button>
+                </div>
+                <div class="tag__detail" id="content">
+                    <ul>
+                        <li>
+                            <a href="#">Tất cả</a>
+                        </li>
+                        <li>
+                            <a href="#">Danh sách kết hợp</a>
+                        </li>
+                        <li>
+                            <a href="#">Âm nhạc</a>
+                        </li>
+                        <li>
+                            <a href="#">Hoạt hình</a>
+                        </li>
+                        <li>
+                            <a href="#">Đọc rap</a>
+                        </li>
+                        <li>
+                            <a href="#">Chương trình nấu ăn</a>
+                        </li>
+                        <li>
+                            <a href="#">Mới tải lên gần đây</a>
+                        </li>
+                        <li>
+                            <a href="#">Trực tiếp</a>
+                        </li>
+                        <li>
+                            <a href="#">Hoạt hình</a>
+                        </li>
+                        <li>
+                            <a href="#">Đọc rap</a>
+                        </li>
+                        <li>
+                            <a href="#">Chương trình nấu ăn</a>
+                        </li>
+                        <li>
+                            <a href="#">Mới tải lên gần đây</a>
+                        </li>
+                        <li>
+                            <a href="#">Trực tiếp</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="next__button">
+                    <button id="slide" type="button">&rsaquo;</button>                   
+                </div>
+            </div>
+            <div class="main_content_container">
+                <div class="group">
+                    <div class="video">
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/SxGLPVvNjvY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB-ADjgltNTH3kO2uJlZT42m-6Bog" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">21:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/6vbAfqlZS4uwbAIE07vfdUArqFBcdJeL9PFAaRr8qjGG2OBCVs69AsfEvdorY8iL7RuboECVzg=s88-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Ava Max - So Am I [Official Music Video]</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Ava Max</a>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">207 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">2 năm trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/A7gMnJ-VrbQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDg66Kged6b59En21uGYjTuoomGbQ" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">22:50</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/lS_hGRn0YpFalNoIIfx3SeWVIcjd7Z_zbzwX1WXcML2V3ntu6hjEftkeNCb7A5HQz4MuYz8V=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">A V A M A X GREATEST HITS FULL ALBUM - BEST SONGS OF A V A M A X PLAYLIST 2021</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Best Pop Songs</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">175 N lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">1 tháng trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/Yz3_zTla1kY/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBy1Bh2vOpNPublwrMK8Xt9vtZMuA" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">25:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLROvFnFGLfK7Tcywk9L7KPuXSSjufOW3gDyNWgM=s88-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Stay (The Kid LAROI & Justin Bieber) Sam Tsui & Casey Breves Cover</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">TheSamTsui</a>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">29 N lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">4 ngày trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/7KqFNWnSxhY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBGj3pw5hWixxIC63lLYiEqOAE_6Q" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">1:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLRU5M-CfyJyLEgH3H3sjmHQQxUrkJt1BtR9PBNf=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">"Good 4 U" / "Misery Business" MASHUP</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Kurt Hugo Schneider</a>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">249 N lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">2 tuần trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/1xanU4QRWnI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB-ddwS5BVHjT5aPQnnEiiOIE1cnw" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">21:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/pvt00pjziCguBcnTLxLDnblxyeAH3LPhEQjzALLGOMm4HuxIGwKIPhYy-foSVfvxlANTU3ntXg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Chào buổi sáng, DANH SÁCH CHƠI Piano Tuổi Mới Mở Đầu Tuần Của Bạn</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">BeiGe Mellow 베이지멜로우</a>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">314 N lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">1 tháng trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/C3UJBMAy5xE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCeypwhnHqKHzWj6701TcN8wSpSvw" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">22:50</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLSgFK49nKqPoIx8cuiMMk84bjTNCftOCtk1sMkL=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Top 15 Bản Nhạc EDM Nghe Hoài Không Chán | Nhạc Điện Tử Gây Nghiện Hay Nhất | YING của Ying 3 năm trước 46 phút 55.816.514 lượt xem</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Ying</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">55 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">3 năm trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/nbibnUX0sMg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAWsYVdYRQeTbMI5WrvcC9yvAWl7w" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">25:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/pvt00pjziCguBcnTLxLDnblxyeAH3LPhEQjzALLGOMm4HuxIGwKIPhYy-foSVfvxlANTU3ntXg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Nhạc piano để bắt đầu một ngày tuyệt vời</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Ying</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">2,7 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">6 tháng trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/qxCCGcMC1Jk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBDOL9udhlLHYTxncY6o5ZhuwcFLA" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">1:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLSstL4z9QfNK1Czuvgqfis2XlQofuTOiUoH2wfv=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Anne-Marie - 2002 (Lyrics) của Unique Vibes 3 năm trước 3 phút, 8 giây 218.740.389 lượt xem</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Unique Vibes</a>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">218 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">3 năm trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/BdPk9ipvczM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBqBylj_ZqGWnwfaB6uLqHTIOSjTg" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">5:13</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLRI5iTG0-5w-AXVAGHcFNuoVGGY4dSTLXHIU9lC=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">'SÀI GÒN ĐAU LÒNG QUÁ' toàn kỷ niệm chúng ta... | HỨA KIM TUYỀN x HOÀNG DUYÊN (OFFICIAL MV) của Hứa Kim Tuyền 5 tháng trước 5 phút, 13 giây 40.634.053 lượt xem</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Hứa Kim Tuyền</a>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">40 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">5 tháng trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/pq9c8T1RzQc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAjyrxs3wNkydYTD-L7ydEaoRJHQQ" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">26:38</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/THmTU_rJJeRBQYrmxV5tWzg2qcWlbQlbjxZPWpr25MWOt8h7ZpLwk-hAlUkBqmYA54aNRMsVGw=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">LIST NHẠC ACOUSTIC GIÚP KHỞI ĐẦU MỘT BUỔI SÁNG TỐT ĐẸP | KIRA</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">The Hanoi Chamomile</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">170 N lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">2 tháng trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/ITiWz3sk1GE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBCvBvpnFQVx8l9nrhsL2tV6OiebQ" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">25:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ks4IZPRy9cfGFMSWonStSsRh4gRE28aknzH2jerCr0ffRwLcFbtksnlb7p0Rt5B8RKZmzIlHlI0=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">TOP 20 Ca Khúc Từng Làm Mưa Làm Gió Các Bảng Xếp Hạng Âm Nhạc - Liên Khúc Nhạc Trẻ Hay Nhất ♫</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">TPT Music For Life</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">2,7 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">3 tháng trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/sz2Dmo1_BjM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJC9gVfkpXOFS9Z_4SSkTZO5mVLg" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">1:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLSXEKHwjY8vsYiHiuythAqiZmKkktXucDF978zaow4=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">KEY 키 'Hate that... (Feat. 태연)' MV</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">SMTOWN</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">3,1 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">5 ngày trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="group_title">
+                        <div class="channel_image">
+                            <img src="https://www.gstatic.com/youtube/img/promos/growth/074035e61f99fc790e00b95789c10c7c612df5da4577b2b8f1d56e09a804446f_120x120.png" alt="">
+                            <div class="group_title_content">
+                                <p>"5K" an toàn với COVID-19</p>
+                                <p>Khẩu trang, Khử khuẩn, Khoảng cách, Không tụ tập, Khai báo y tế</p>
+                            </div>
+                        </div>
+                        <a href="#">&#10005;</a>
+                        <div class="tooltiptext">Không quan tâm</div>
+                    </div>
+                    <div class="video">
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/zb6ug3Y18Jk/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCVIX9JWzMewi9JCQA9PgB3_rjp8Q" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">1:17</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/kcbo1cwotqRXfU2EL3AmNUVlD0M7YGl1fw86lj3MWXwH5yDDCbnyfr0SGjfCt4CUfWOAFtX_Kw=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Bộ Y tế: Thông điệp 5K + Vắc xin - "Lá chắn thép" trong phòng chống đại dịch COVID-19</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Bộ Y tế</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">2 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">3 tháng trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/snW0-VWLJQA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBcMOXcRvGJa084C_7wWkcZagiWYg" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">0:33</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/kcbo1cwotqRXfU2EL3AmNUVlD0M7YGl1fw86lj3MWXwH5yDDCbnyfr0SGjfCt4CUfWOAFtX_Kw=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Phương thức lây truyền của COVID-19 và Thông điệp 5K</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Bộ Y tế</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">2,5 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">3 tháng trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/A4eXn59IuQ4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB78wx_1QrkE_CKb2qlQ0BeB6Q7Mw" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">3:36</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/kcbo1cwotqRXfU2EL3AmNUVlD0M7YGl1fw86lj3MWXwH5yDDCbnyfr0SGjfCt4CUfWOAFtX_Kw=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">HƯỚNG DẪN SỬ DỤNG KHẨU TRANG ĐÚNG ĐỂ PHÒNG CHỐNG DỊCH COVID-19</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Bộ Y Tế</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">2,3 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">1 năm trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/03T8nel-jZY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCYk0zD_5mweAEp1IY8scZ74BOKzg" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">0:27</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/kcbo1cwotqRXfU2EL3AmNUVlD0M7YGl1fw86lj3MWXwH5yDDCbnyfr0SGjfCt4CUfWOAFtX_Kw=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">KHI NÀO NÊN TIÊM VẮC XIN?</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Bộ Y Tế</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">945 N lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">1 năm trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group_break">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="group_title">
+                        <p>Tin tức về COVID-19</p>
+                        <a href="#">&#10005;</a>
+                        <div class="tooltiptext">Tìm kiếm</div>
+                    </div>
+                    <div class="video">
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/BX852_SSmug/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAg7xUYEmpX2pQqb6t6jIOE8D0stA" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">21:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLT2f0m4cjACXYVFcQlCyhTkWTOqNEEGQks9YaTrCA=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Tin tức Covid-19 mới nhất hôm nay 28/8. Dich Virus Corona Việt Nam kỉ lục gần 13.000 ca nhiễm/ngày</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">TV24h</a>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">138 N lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">Phát trực tiếp 10 giờ trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/ZeB0sDk8gHQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB3LEQmdJ43UeKa3aHjOjU9b3eIbg" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">22:50</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/yeivP6BCS33WnuhrmgNWIEH9Bs-mVqxqeYFU4mFsnZxS3htO5hfaC6Q5Uu3VAiXd99NrEnbW5Q=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Bản tin Covid-19 ngày 26.8: Tiếp nhận thêm nhiều vắc xin giữa lúc dịch bệnh căng thẳng</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Báo Thanh Niên</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">438 N lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">Phát trực tiếp 1 ngày trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/iqKzWuRukjw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB78uq0-PSusvMUi-f7aqKvLoSugg" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">25:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/5-dPp2pSSYPYyA_rt1j0eG-5H3egSqilXAT7XKVejBGUpf7biU_8QmNXXvPrfuuVROyfFMO92w=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Tối 27/8, thêm 12.920 ca dương tính Sars-CoV-2, cao hơn 1.345 ca so với hôm qua | VTC Now</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">VTC NOW </a>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">260 N lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">Phát trực tiếp 1 ngày trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/ntvC1q0zKpw/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDuq0iN3Ro9iznumVCcbopirVDk1Q" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">1:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLT09dpn1I3ZWvPe766RaiLiBG6DfvqmMoOfku4TUg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Cập nhật tin Covid-19 sáng ngày 27-8-2021</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Truyền Hình Nhân Dân</a>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">31 N lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">Phát trực tiếp 1 ngày trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="video">
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/SxGLPVvNjvY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB-ADjgltNTH3kO2uJlZT42m-6Bog" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">21:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/6vbAfqlZS4uwbAIE07vfdUArqFBcdJeL9PFAaRr8qjGG2OBCVs69AsfEvdorY8iL7RuboECVzg=s88-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Ava Max - So Am I [Official Music Video]</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Ava Max</a>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">207 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">2 năm trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/A7gMnJ-VrbQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDg66Kged6b59En21uGYjTuoomGbQ" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">22:50</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/lS_hGRn0YpFalNoIIfx3SeWVIcjd7Z_zbzwX1WXcML2V3ntu6hjEftkeNCb7A5HQz4MuYz8V=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">A V A M A X GREATEST HITS FULL ALBUM - BEST SONGS OF A V A M A X PLAYLIST 2021</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Best Pop Songs</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">175 N lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">1 tháng trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/Yz3_zTla1kY/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBy1Bh2vOpNPublwrMK8Xt9vtZMuA" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">25:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLROvFnFGLfK7Tcywk9L7KPuXSSjufOW3gDyNWgM=s88-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Stay (The Kid LAROI & Justin Bieber) Sam Tsui & Casey Breves Cover</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">TheSamTsui</a>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">29 N lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">4 ngày trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/7KqFNWnSxhY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBGj3pw5hWixxIC63lLYiEqOAE_6Q" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">1:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLRU5M-CfyJyLEgH3H3sjmHQQxUrkJt1BtR9PBNf=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">"Good 4 U" / "Misery Business" MASHUP</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Kurt Hugo Schneider</a>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">249 N lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">2 tuần trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/1xanU4QRWnI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB-ddwS5BVHjT5aPQnnEiiOIE1cnw" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">21:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/pvt00pjziCguBcnTLxLDnblxyeAH3LPhEQjzALLGOMm4HuxIGwKIPhYy-foSVfvxlANTU3ntXg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Chào buổi sáng, DANH SÁCH CHƠI Piano Tuổi Mới Mở Đầu Tuần Của Bạn</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">BeiGe Mellow 베이지멜로우</a>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">314 N lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">1 tháng trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/C3UJBMAy5xE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCeypwhnHqKHzWj6701TcN8wSpSvw" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">22:50</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLSgFK49nKqPoIx8cuiMMk84bjTNCftOCtk1sMkL=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Top 15 Bản Nhạc EDM Nghe Hoài Không Chán | Nhạc Điện Tử Gây Nghiện Hay Nhất | YING của Ying 3 năm trước 46 phút 55.816.514 lượt xem</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Ying</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">55 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">3 năm trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/nbibnUX0sMg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAWsYVdYRQeTbMI5WrvcC9yvAWl7w" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">25:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/pvt00pjziCguBcnTLxLDnblxyeAH3LPhEQjzALLGOMm4HuxIGwKIPhYy-foSVfvxlANTU3ntXg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Nhạc piano để bắt đầu một ngày tuyệt vời</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Ying</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">2,7 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">6 tháng trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/qxCCGcMC1Jk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBDOL9udhlLHYTxncY6o5ZhuwcFLA" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">1:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLSstL4z9QfNK1Czuvgqfis2XlQofuTOiUoH2wfv=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Anne-Marie - 2002 (Lyrics) của Unique Vibes 3 năm trước 3 phút, 8 giây 218.740.389 lượt xem</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Unique Vibes</a>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">218 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">3 năm trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/BdPk9ipvczM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBqBylj_ZqGWnwfaB6uLqHTIOSjTg" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">5:13</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLRI5iTG0-5w-AXVAGHcFNuoVGGY4dSTLXHIU9lC=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">'SÀI GÒN ĐAU LÒNG QUÁ' toàn kỷ niệm chúng ta... | HỨA KIM TUYỀN x HOÀNG DUYÊN (OFFICIAL MV) của Hứa Kim Tuyền 5 tháng trước 5 phút, 13 giây 40.634.053 lượt xem</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Hứa Kim Tuyền</a>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">40 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">5 tháng trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/pq9c8T1RzQc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAjyrxs3wNkydYTD-L7ydEaoRJHQQ" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">26:38</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/THmTU_rJJeRBQYrmxV5tWzg2qcWlbQlbjxZPWpr25MWOt8h7ZpLwk-hAlUkBqmYA54aNRMsVGw=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">LIST NHẠC ACOUSTIC GIÚP KHỞI ĐẦU MỘT BUỔI SÁNG TỐT ĐẸP | KIRA</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">The Hanoi Chamomile</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">170 N lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">2 tháng trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/ITiWz3sk1GE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBCvBvpnFQVx8l9nrhsL2tV6OiebQ" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">25:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ks4IZPRy9cfGFMSWonStSsRh4gRE28aknzH2jerCr0ffRwLcFbtksnlb7p0Rt5B8RKZmzIlHlI0=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">TOP 20 Ca Khúc Từng Làm Mưa Làm Gió Các Bảng Xếp Hạng Âm Nhạc - Liên Khúc Nhạc Trẻ Hay Nhất ♫</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">TPT Music For Life</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">2,7 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">3 tháng trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/sz2Dmo1_BjM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJC9gVfkpXOFS9Z_4SSkTZO5mVLg" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">1:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLSXEKHwjY8vsYiHiuythAqiZmKkktXucDF978zaow4=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">KEY 키 'Hate that... (Feat. 태연)' MV</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">SMTOWN</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">3,1 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">5 ngày trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/SxGLPVvNjvY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB-ADjgltNTH3kO2uJlZT42m-6Bog" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">21:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/6vbAfqlZS4uwbAIE07vfdUArqFBcdJeL9PFAaRr8qjGG2OBCVs69AsfEvdorY8iL7RuboECVzg=s88-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Ava Max - So Am I [Official Music Video]</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Ava Max</a>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">207 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">2 năm trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/A7gMnJ-VrbQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDg66Kged6b59En21uGYjTuoomGbQ" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">22:50</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/lS_hGRn0YpFalNoIIfx3SeWVIcjd7Z_zbzwX1WXcML2V3ntu6hjEftkeNCb7A5HQz4MuYz8V=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">A V A M A X GREATEST HITS FULL ALBUM - BEST SONGS OF A V A M A X PLAYLIST 2021</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Best Pop Songs</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">175 N lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">1 tháng trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/Yz3_zTla1kY/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBy1Bh2vOpNPublwrMK8Xt9vtZMuA" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">25:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLROvFnFGLfK7Tcywk9L7KPuXSSjufOW3gDyNWgM=s88-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Stay (The Kid LAROI & Justin Bieber) Sam Tsui & Casey Breves Cover</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">TheSamTsui</a>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">29 N lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">4 ngày trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/7KqFNWnSxhY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBGj3pw5hWixxIC63lLYiEqOAE_6Q" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">1:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLRU5M-CfyJyLEgH3H3sjmHQQxUrkJt1BtR9PBNf=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">"Good 4 U" / "Misery Business" MASHUP</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Kurt Hugo Schneider</a>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">249 N lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">2 tuần trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/1xanU4QRWnI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB-ddwS5BVHjT5aPQnnEiiOIE1cnw" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">21:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/pvt00pjziCguBcnTLxLDnblxyeAH3LPhEQjzALLGOMm4HuxIGwKIPhYy-foSVfvxlANTU3ntXg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Chào buổi sáng, DANH SÁCH CHƠI Piano Tuổi Mới Mở Đầu Tuần Của Bạn</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">BeiGe Mellow 베이지멜로우</a>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">314 N lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">1 tháng trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/C3UJBMAy5xE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCeypwhnHqKHzWj6701TcN8wSpSvw" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">22:50</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLSgFK49nKqPoIx8cuiMMk84bjTNCftOCtk1sMkL=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Top 15 Bản Nhạc EDM Nghe Hoài Không Chán | Nhạc Điện Tử Gây Nghiện Hay Nhất | YING của Ying 3 năm trước 46 phút 55.816.514 lượt xem</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Ying</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">55 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">3 năm trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/nbibnUX0sMg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAWsYVdYRQeTbMI5WrvcC9yvAWl7w" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">25:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/pvt00pjziCguBcnTLxLDnblxyeAH3LPhEQjzALLGOMm4HuxIGwKIPhYy-foSVfvxlANTU3ntXg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Nhạc piano để bắt đầu một ngày tuyệt vời</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Ying</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">2,7 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">6 tháng trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/qxCCGcMC1Jk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBDOL9udhlLHYTxncY6o5ZhuwcFLA" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">1:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLSstL4z9QfNK1Czuvgqfis2XlQofuTOiUoH2wfv=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">Anne-Marie - 2002 (Lyrics) của Unique Vibes 3 năm trước 3 phút, 8 giây 218.740.389 lượt xem</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Unique Vibes</a>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">218 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">3 năm trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/BdPk9ipvczM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBqBylj_ZqGWnwfaB6uLqHTIOSjTg" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">5:13</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLRI5iTG0-5w-AXVAGHcFNuoVGGY4dSTLXHIU9lC=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">'SÀI GÒN ĐAU LÒNG QUÁ' toàn kỷ niệm chúng ta... | HỨA KIM TUYỀN x HOÀNG DUYÊN (OFFICIAL MV) của Hứa Kim Tuyền 5 tháng trước 5 phút, 13 giây 40.634.053 lượt xem</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">Hứa Kim Tuyền</a>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">40 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">5 tháng trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/pq9c8T1RzQc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAjyrxs3wNkydYTD-L7ydEaoRJHQQ" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">26:38</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/THmTU_rJJeRBQYrmxV5tWzg2qcWlbQlbjxZPWpr25MWOt8h7ZpLwk-hAlUkBqmYA54aNRMsVGw=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">LIST NHẠC ACOUSTIC GIÚP KHỞI ĐẦU MỘT BUỔI SÁNG TỐT ĐẸP | KIRA</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">The Hanoi Chamomile</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">170 N lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">2 tháng trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/ITiWz3sk1GE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBCvBvpnFQVx8l9nrhsL2tV6OiebQ" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">25:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ks4IZPRy9cfGFMSWonStSsRh4gRE28aknzH2jerCr0ffRwLcFbtksnlb7p0Rt5B8RKZmzIlHlI0=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">TOP 20 Ca Khúc Từng Làm Mưa Làm Gió Các Bảng Xếp Hạng Âm Nhạc - Liên Khúc Nhạc Trẻ Hay Nhất ♫</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">TPT Music For Life</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">2,7 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">3 tháng trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video_container">
+                            <div class="video_thumbnail">
+                                <img src="https://i.ytimg.com/vi/sz2Dmo1_BjM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJC9gVfkpXOFS9Z_4SSkTZO5mVLg" alt="">
+                                <div class="watch_later">
+                                    <i class="far fa-clock"></i>
+                                </div>
+                                <div class="add_to_watchlist">
+                                    <i class="fas fa-align-right"></i>
+                                </div>
+                                <p class="sec">1:55</p>
+                            </div>
+                            <div class="video_info">
+                                <div class="channel_image">
+                                    <img src="https://yt3.ggpht.com/ytc/AKedOLSXEKHwjY8vsYiHiuythAqiZmKkktXucDF978zaow4=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="video_name">
+                                        <a href="#">KEY 키 'Hate that... (Feat. 태연)' MV</a>
+                                    </div>
+                                    <div class="host_info">
+                                        <div class="channel_name">
+                                            <a href="#">SMTOWN</a>
+                                            <i class="fas fa-check-circle"></i>
+                                        </div>
+                                        <div class="view">
+                                            <a href="#">3,1 Tr lượt xem</a>
+                                        </div>
+                                        <div class="dot">
+                                            <p>・</p>
+                                        </div>
+                                        <div class="time">
+                                            <a href="#">5 ngày trước</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var sideBar = document.getElementById('cbp-spmenu-s1');
+    document.getElementById('showLeftPush').addEventListener("click", function() {
+        if (sideBar.classList.contains("hidden__side__bar")) {
+            sideBar.classList.remove("hidden__side__bar");
+        } else {
+            sideBar.classList.add("hidden__side__bar");
+        }
+    });
+
+    var targetDiv = document.getElementById("upVideoButton");
+    var btn1 = document.getElementById("uploadVideo");
+    btn1.onclick = function () {
+        if (targetDiv.style.display != "block" || !targetDiv.style.display) {
+            target.style.display = "none";
+            targetDiv3.style.display = "none";
+            targetDiv.style.display = "block";
+        } else {
+            targetDiv.style.display = "none";
+        }
+    };
+
+    var target= document.getElementById("youtubeCategory");
+    var btn2 = document.getElementById("categoryButton");
+    btn2.onclick = function () {
+        if (target.style.display != "block" || !target.style.display) {
+            targetDiv.style.display = "none";
+            targetDiv3.style.display = "none";
+            target.style.display = "block";
+        } else {
+            target.style.display = "none";
+        }
+    };
+
+    var targetDiv3= document.getElementById("notification");
+    var btn3 = document.getElementById("notiButton");
+    btn3.onclick = function () {
+        if (targetDiv3.style.display != "block" || !targetDiv3.style.display) {
+            target.style.display = "none";
+            targetDiv.style.display = "none";
+            targetDiv3.style.display = "block";
+        } else {
+            targetDiv3.style.display = "none";
+        }
+    };
+
+    var button = document.getElementById('slide');
+        button.onclick = function () {
+    var container = document.getElementById('container');
+        sideScroll(container,'right',25,100,10);
+    };
+
+    var back = document.getElementById('slideBack');
+        back.onclick = function () {
+    var container = document.getElementById('container');
+        sideScroll(container,'left',25,100,10);
+    };
+
+    function sideScroll(element,direction,speed,distance,step){
+        scrollAmount = 0;
+    var slideTimer = setInterval(function(){
+        if(direction == 'left'){
+            element.scrollLeft -= step;
+        } else {
+            element.scrollLeft += step;
+        }
+        scrollAmount += step;
+        if(scrollAmount >= distance){
+            window.clearInterval(slideTimer);
+        }
+    }, speed);
+    }   
+
+</script>
+</html>
